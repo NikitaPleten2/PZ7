@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="loadCSS.js>"></script>
+    <link rel="stylesheet" href="main.css" media="print" onload="this.media='all'; this.onload=null;">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="main.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="logic.js"></script>
+</head>
+
+
+<body>
+   
+
+    <header>
+        <div id = "header-container">
+            <h1 id = "logo">SKYRIM </br> </h1>
+            <nav>
+                <a href="#about_game">О игре</a></li>
+                <a href="#races">Рассы</a></li>
+                <a href="#cities">Города</a></li>
+                <a href="#classes">Классы</a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <div id = "content">
+        <div id = "about_game">
+            <h2> Информация о игре:</h2>
+            <p>
+                The Elder Scrolls V: Skyrim (дословно с англ. — «Древние свитки 5: Скайрим») — мультиплатформенная компьютерная ролевая игра с открытым миром, разработанная студией Bethesda Game Studios и выпущенная компанией Bethesda Softworks. Это пятая часть в серии The Elder Scrolls. Игра была выпущена 11 ноября 2011 года для Windows, Playstation 3 и Xbox 360. Для игры были выпущены три загружаемых дополнения под названиями Dawnguard, Hearthfire и Dragonborn, позже объединённых в издании The Elder Scrolls V: Skyrim — Legendary Edition. Осенью 2016 года было выпущено переиздание для Windows, Playstation 4 и Xbox One, включающее в себя те же дополнения, обновленную графику и поддержку пользовательских модификаций
+        </div>
+    
+
+    <h2 id = "races">Рассы, присутствующие в игре:</h2>
+    
+    <div id="accordeon">
+		<div class="acc-head">
+            Людские рассы
+            <img class = "imagee" src="images/acc-arrow.png" alt="" width="4%">
+		</div>
+		<div class="acc-body">
+			<ul>
+                <li>Норды</li>
+                <li>Имперцы</li>
+                <li>Редгарды</li>
+                <li>Бретонцы</li>
+            </ul>
+		</div>
+		<div class="acc-head">
+            Зверо-рассы
+            <img class = "imagee" src="images/acc-arrow.png" alt="" width="4%">
+		</div>
+		<div class="acc-body">
+			<ul>
+                <li>Каджиты</li>
+                <li>Аргонеане</li>
+                <li>Орки</li>
+            </ul>
+		</div>
+		<div class="acc-head">
+            Эльфийские рассы
+            <img class = "imagee" src="images/acc-arrow.png" alt="" width="4%">
+		</div>
+		<div class="acc-body">
+			<ul>
+                <li>Лесные эльфы</li>
+                <li>Темные эльфы</li>
+                <li>Высокие эльфы</li>
+            </ul>
+		</div>
+	</div>
+
+    
+
+    <h2>Не придумал что сюда написать. При нажатии картинка исчезнет</h2>
+    <div class = "hidden"><img class = "imagee" src="images/img-hide.jpg" alt="" width="50%" /></div>
+    
+  
+       <h2>Классы персонажа, доступные для игрока:</h2>
+      <ul id="sortable">
+        <li>Воин</li>
+        <li>Маг</li>
+        <li>Вор</li>
+      </ul>
+    
+    
+      <h2 id = "classes">Описание каждого класса</h2>
+    <div id="tabs">
+       
+        <ul class="tabs-nav">
+            <li><a href="#tab-1">Воин</a></li>
+            <li><a href="#tab-2">Маг</a></li>
+            <li><a href="#tab-3">Вор</a></li>
+        </ul>	
+        
+        <div class="tabs-items">
+            <div class="tabs-item" id="tab-1">
+                Воин полагается лишь на силу клинка и крепость брони во время боя и каждая его способность ведёт к повышению наносимого урона или уровня защиты.
+            </div>
+            <div class="tabs-item" id="tab-2">
+                Анализируя заклинания, навыки и перки типичного мага, можно сделать вывод, что наибольший недостаток заклинателя проявляется в отсутствии защиты и малом запасе здоровья. Маги не носят броню, полагаясь на то, что ношение робы гораздо эффективнее в плане бонусов к магическим навыкам.
+            </div>
+            <div class="tabs-item" id="tab-3">
+                Вор, обладающий правильным набором навыков, очень силён. Последняя способность в ветке «Скрытность» позволяет исчезать буквально у врагов из-под носа. Вы входите в режим скрытности (проще говоря, приседаете) и наносите удар из скрытности, отравляете противника ядом.
+            </div>		
+        </div>
+    </div>  
+
+    
+    
+    <h2 id = "cities">Города, присутствующие в игре:</h2>
+    <div class="">
+    <div class="carousel shadow"> 
+        <div class="carousel-button-left"><a href="#"><img class = "imagee" src="images/arrow-left.png" alt="" width="80%"></a></div> 
+        <div class="carousel-button-right"><a href="#"><img class = "imagee" src="images/arrow-right.png" alt="" width="80%" ></a></div> 
+          <div class="carousel-wrapper"> 
+             <div class="carousel-items"> 
+                <div class="carousel-block ">
+                    <img class = "imagee" src="images/Vindhelm.jpg" alt="" width="80%" />
+                </div>
+                <div class="carousel-block">
+                    <img class = "imagee" src="images/Vaitran.jpg" alt="" width="80%"/>
+                </div>
+                <div class="carousel-block">
+                    <img class = "imagee" src="images/Riften.jpg" alt="" width="80%"/>
+                </div>
+                <div class="carousel-block">
+                    <img class = "imagee" src="images/Markarth.jpg" alt="" width="80%" />
+                </div>
+                <div class="carousel-block">
+                <img class = "imagee" src="images/Solitude.jpeg" alt="" width="80%"/>
+                </div>
+            </div>
+          </div>
+     </div>
+    </div>
+
+    <footer>
+        <div id = "footer-container">
+            <p>Skyrim</p>
+            <p>Made by: Nikita Pleten'</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+        <script>
+            const MyLazyLoad = new LazyLoad({
+                elements_selector: ".imagee"
+            });
+        </script>
+
+</body>
+
+</html>
